@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: montserrat;
+
+}
+body{
+    background-color: aliceblue;
+}
+.container{
+    display: flex;
+    font-weight: 500;
+    text-transform: uppercase;
+    min-width: 1500px;
+    height: 100vh;
+
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(226, 87, 87);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 300ms all ease;
+}
+
+.b1:hover{
+    transform: rotate(45deg);
+    background-image: linear-gradient(45deg ,rgb(187, 90, 26),rgb(211, 35, 35));
+}
+/*  3D 
+ .b1:hover{
+    transform: rotateY(360deg);
+    background-image: linear-gradient(45deg ,rgb(187, 90, 26),rgb(211, 35, 35));
+}
+ */
+.b2:hover{
+    transform: scale(1.2);
+    background-image: linear-gradient(45deg ,rgb(187, 90, 26),rgb(211, 35, 35));
+}
+/* .b2:hover{
+    transform: scaleY(2);
+    background-image: linear-gradient(45deg ,rgb(187, 90, 26),rgb(211, 35, 35));
+} */
+.b3:hover{
+    transform: skew(20deg);
+    background-image: linear-gradient(45deg ,rgb(187, 90, 26),rgb(211, 35, 35));
+}
+.b4:hover{
+    transform: translate(20px,-50px);
+    background-image: linear-gradient(45deg ,rgb(187, 90, 26),rgb(211, 35, 35));
+}
+.b5:hover{
+    transform: matrix(2, 1, 1, 2 , 100, 100);
+    /* All transformation in one. */
+    /* order: scaleX,skewY,skewX,scaleY,translateX,translateY */
+    background-image: linear-gradient(45deg ,rgb(187, 90, 26),rgb(211, 35, 35));
+}
